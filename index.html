@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="test.js"></script>
+</head>
+<body>
+    <script>
+        // FS.writeFile('file', 'foobar');
+        // const blob = new Blob([FS.readFile('Test_1.png')], {'type': 'image/png'});
+        var factory = require('./a.out.js');
+
+        factory().then((instance) => {
+        instance.int_sqrt(); // direct calling works
+        // instance.ccall("sayHi"); // using ccall etc. also work
+        // console.log(instance._daysInWeek()); // values can be returned, etc.
+        });
+        // var contents = FS.readFile('Test_1.png', { encoding: 'utf8' });
+
+        // value of number of threads   
+        // file of img
+    //     setTimeout(() => {
+    //    console.log(wasmExports.thing(25));
+    //     }, 3000);
+    </script>
+</body>
+</html>
